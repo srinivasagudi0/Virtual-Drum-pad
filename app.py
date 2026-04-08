@@ -5,27 +5,18 @@ st.title("Band")
 
 st.header("Click buttons and see the magic!")
 
-
 display_button("Crash!")
 
-if st.button("Hi Hat"):
-    st.write("Tss!")
+display_button("Hi Hat!")
 
-if st.button("Snare Drum"):
-    st.write("Boom!")
+display_button("Snare Drum!")
 
-if st.button("Bass Drum"):
-    st.write("Dum!")
+display_button("Bass Drum!")
 
-if st.button("Rack Tom 1"):
-    st.write("Tock!")
+display_button("Rack Tom 1!")
 
-if st.button("Rack Tom 2"):
-    st.write("Tock!")
+display_button("Rack Tom 2!")
 
-if st.button("Ride Cymbal"):
-    st.write("Ting!")
+display_button("Ride Cymbal!")
 
-if st.button("Floor Tom"):
-    st.write("Tock!")
-
+display_button("Floor Tom!")
