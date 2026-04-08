@@ -1,11 +1,12 @@
 import streamlit as st
+from support import diplay_button as display_button
 
 st.title("Band")
 
 st.header("Click buttons and see the magic!")
 
-if st.button("Crash Cymbal"):
-    st.write("Crash!")
+
+display_button("Crash!")
 
 if st.button("Hi Hat"):
     st.write("Tss!")
