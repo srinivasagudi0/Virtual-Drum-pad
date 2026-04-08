@@ -1,6 +1,7 @@
 import streamlit as st
 from support import diplay_button as display_button
 
+
 BUTTON_STYLE = """
     width: 100%;
     height: 70px;
@@ -12,12 +13,41 @@ BUTTON_STYLE = """
     cursor: pointer;
 """
 
-CYMBAL_STYLE = BUTTON_STYLE + "background: #d97706;"
-DRUM_STYLE = BUTTON_STYLE + "background: #2563eb;"
-BASS_STYLE = BUTTON_STYLE + "background: #059669;"
+CYMBAL_STYLE = BUTTON_STYLE + """
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 8px 20px rgba(217, 119, 6, 0.35);
+"""
+
+DRUM_STYLE = BUTTON_STYLE + """
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+"""
+
+BASS_STYLE = BUTTON_STYLE + """
+    background: linear-gradient(135deg, #10b981, #047857);
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35);
+"""
+
 
 st.title("Band")
 st.header("Click buttons and see the magic!")
+st.set_page_config(layout="wide")
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: radial-gradient(circle at top, #1f2937, #0f172a 60%);
+    }
+    h1, h2, p {
+        color: white !important;
+        text-align: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 top_left, top_middle, top_right = st.columns(3)
 mid_left, mid_middle_left, mid_middle_right, mid_right = st.columns(4)
