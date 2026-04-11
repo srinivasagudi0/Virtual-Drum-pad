@@ -1,12 +1,28 @@
-# Virtual-Drum-pad
+# Virtual Drum Pad
 
-This is truly a stress buster. It is made out python (streamlit) + HTML. It is very easy to use and looks really vibrant. I will update and ship this again. 
+Virtual Drum Pad is a small Streamlit app that merges the original drum pad with the `TBD` focus-session idea into one place.
 
-Next Ship (once this is approved):
-- inlcudes keyboard control
+You get:
 
-  &
-- piano
+- a clean drum pad layout with local audio samples
+- a simple practice panel with `Focus`, `Chill`, and `Relax` modes
+- a built-in countdown timer
+- optional Spotify playlist loading when credentials are available
 
+## Run it
 
-  Enjoy the app.
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Optional Spotify setup
+
+Set these environment variables only if you want the embedded playlist feature:
+
+```bash
+export SPOTIFY_CLIENT_ID="your-client-id"
+export SPOTIFY_CLIENT_SECRET="your-client-secret"
+```
+
+Without them, the drum pad and timer still work normally.
